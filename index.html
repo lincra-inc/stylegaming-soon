@@ -12,7 +12,25 @@
     padding:0;
     box-sizing:border-box;
 }
+.disabled{
+    pointer-events:none;
+    opacity:0.5;
+    cursor:not-allowed;
+}
+.discord-btn{
+    background:linear-gradient(#41b04c, #2f8f39);
+    color:#fff !important;
+    font-weight:bold;
+    border:1px solid #2f8f39;
+    box-shadow:0 2px 6px rgba(0,0,0,.15);
+    transition:.2s;
+}
 
+.discord-btn:hover{
+    background:linear-gradient(#4bcf57, #37a944);
+    transform:translateY(-1px);
+    box-shadow:0 4px 10px rgba(0,0,0,.2);
+}
 body{
     font-family:Verdana,Arial,sans-serif;
     background:linear-gradient(#f1f1f1,#d7d7d7);
@@ -340,16 +358,15 @@ Style-<span>Gaming</span>
 
 <nav>
 
-<a href="#">Inicio</a>
+<a href="#" class="disabled">Inicio</a>
+<a href="#" class="disabled">Foro</a>
+<a href="#" class="disabled">Clan</a>
+<a href="#" class="disabled">Servidores</a>
 
-<a href="#">Foro</a>
-
-<a href="#">Clan</a>
-
-<a href="#">Servidores</a>
-
-<a href="#">Contacto</a>
-
+<a href="#" class="disabled">Contacto</a>
+<a href="http://discord.gg/pdUeR8gfK7" class="discord-btn" target="_blank">
+Únete a Discord
+</a>
 </nav>
 
 </header>
